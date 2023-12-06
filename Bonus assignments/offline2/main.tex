@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{lipsum}
+\usepackage{siunitx}
+
+\begin{document}
+
+\begin{tikzpicture}
+    % \draw (0,0) -- (5,0);
+    % \draw (0,0) -- (4,0) -- (4,4) -- (0,4) -- (0,0);
+    % \draw (0,0) -- (4,0) -- (4,4) -- (0,4) -- cycle;
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (0,0) grid (5,5);
+    % \draw[->] (-5,0) -- (5,0) node[below] {$x$};
+    % \draw[->] (0,-5) -- (0,5)node[left] {$y$};
+    
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (-1,-1) grid (6,6);
+    % \draw[red] (0,0) -- (2,2) -- (4,0) -- (5,5);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (0,0) rectangle (4,4);
+    % \draw (0,0) parabola (4,4);
+    % \draw (0,0) circle (3cm);
+    % \draw (0,0) ellipse (3cm and 1cm);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (-2,-2) grid (6,6);
+    % \draw (0,0) .. controls (1,4) and (2,-4) .. (4,0);
+    % \draw (0,0) to [out=45, in=225] (4,0);
+ \end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw[domain=-2:2] plot (\x,{\x*\x});
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (0,0) rectangle (4,4);
+    % \node [below left] at (0,0) {A};
+    % \node [below right] at (4,0) {B};
+    % \node [above right] at (4,4) {C};
+    % \node [above left] at (0,4) {D};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \foreach \x in {1,...,6}
+    % {
+    %   \draw (\x*2,0) circle [radius=1];
+    % }
+\end{tikzpicture}
+
+\section{Fig no 01}
+ \vspace{4cm}
+ \hspace{3cm}
+
+\tikzstyle{squareNode} =[draw,shape=rectangle, minimum width=6cm, minimum height=6cm,text centered, fill=red!90]
+ \begin{tikzpicture}[node distance=0.2cm]
+      \foreach \x in {15,...,1}
+      {
+        \node (x) [squareNode] at (\x*0.2,\x*0.2) {\Large{Layers}};
+      }
+ \end{tikzpicture}
+\vspace{4cm} 
+
+\section{Fig no 02}
+ \vspace{2cm}
+  \tikzstyle{smallCircle} =[draw,shape=circle, very thick, minimum size=2cm]
+  \tikzstyle{largeCircle} =[draw,shape=circle,fill=blue!60 ,ultra thick, blue, minimum size=6cm]
+  \tikzstyle{arrow} = [thick,->,>=stealth]
+  
+\begin{tikzpicture}
+    \node (0) [smallCircle] at (-4,5) {\Large{x0=1}};
+    \node (1) [smallCircle] at (-4,1) {\huge{x1}};
+    \node (2) [smallCircle] at (-4,-3) {\huge{x2}};
+    \node (3) at (-7,7) {\huge{Inputs}};
+     \node [largeCircle] at (4,0);
+     \draw[dashed,white, ultra thick] (5,-4) -- (5,4);
+     \draw [arrow] (3) -- (0);
+     \draw [arrow] (3) -- (1);
+     \node (4) [draw=none, text width=3cm, align=center] at (1,-5) {\huge{Linear\\function}};
+     \node (5) [draw=none, text width=3cm, align=center] at (7,-5) {\huge{Activation\\function}};
+     \node (6) [text = white] at (3,0) {\Huge{Z}};
+     \node (7) [text = white] at (6,0) {\Huge{f}};
+     \node (8) at (9,0) {};
+     \node (9) at (1,0) {};
+     \draw [arrow] (0) -- node[anchor=south] {\huge{b}} (9);
+    \draw [arrow] (1) -- node[anchor=south] {\huge{w1}} (9);
+    \draw [arrow] (2) -- node[anchor=south] {\huge{w2}} (9);
+     \draw [arrow] (5) -- (7);
+     \draw [arrow] (4) -- (6);
+     \draw [arrow] (7) -- node[anchor=south] {\huge{y}} (8);
+     \draw [arrow] (7) -- node[anchor=north] {\hspace{0.6cm}\Large{Output}} (8);
+     \draw[dotted, shape=square, black, ultra thick] (-4,-5) -- (-3.5,-5);
+     
+ \end{tikzpicture}
+
+\end{document}
