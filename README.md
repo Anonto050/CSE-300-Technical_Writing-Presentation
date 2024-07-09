@@ -30,14 +30,18 @@ Ensure you have the following installed on your local machine:
 ### LaTeX Templates
 - **Description**: Contains various LaTeX templates for assignments and presentations.
 - **Files**:
-  - [Templates Directory](Templates/)
+  - [Templates Directory](/Template)
 
 ### Assignments
 - **Description**: Contains the assignments for the course.
 - **Files**:
-  - [Assignment 1](Assignments/Assignment1/)
-  - [Assignment 2](Assignments/Assignment2/)
-  - [Bonus Assignments](Assignments/Bonus/)
+  - **Assignment 1**
+    - [Problem Statement](/Bonus%20assignments/Offline_1.pdf)
+    - [Solution](/Bonus%20assignments/Offline_1)
+  - **Assignment 2**
+    - [Problem Statement](/Bonus%20assignments/offline2.pdf)
+    - [Solution](/Bonus%20assignments/offline2)
+
 
 ### Final Presentation
 - **Description**: Contains the final LaTeX presentation for the course.
