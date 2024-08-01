@@ -30,7 +30,10 @@ Ensure you have the following installed on your local machine:
 ### LaTeX Templates
 - **Description**: Contains various LaTeX templates for assignments and presentations.
 - **Files**:
-  - [Templates Directory](/Template)
+  - [Basics templates for online/lab 01](/Basics)
+  - [Templates from Overleaf](/Template%20from%20Overleaf)
+  - [TIKZ](/TIKZ_TEMPlATE)
+  - [Beamer practice](/Beamer%20practice)
 
 ### Assignments
 - **Description**: Contains the assignments for the course.
