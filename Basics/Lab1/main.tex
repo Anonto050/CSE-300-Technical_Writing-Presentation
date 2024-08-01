@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{biblatex}
+\usepackage{stix}
+\usepackage{fdsymbol}
+
+\title{Lab1}
+\author{1905050 }
+\date{November 2022}
+\addbibresource{bib.bib}
+
+
+\begin{document}
+
+
+\newpage
+
+\section{Introduction}
+Bangladesh (/ˌbæŋɡləˈdɛʃ, ˌbɑːŋ-/;[12] Bengali: বাংলাদেশ, pronounced [ˈbaŋlaˌdeʃ] (listen)), officially the People's Republic of Bangladesh, is a country in South Asia. It is the eighth-most populous country in the world, with a population exceeding 165 million people in an area of 148,460 square kilometres (57,320 sq mi).[7] Bangladesh is among the most densely populated countries in the world, and shares land borders with India to the west, north, and east, and Myanmar to the southeast; to the south it has a coastline along the Bay of Bengal. It is narrowly separated from Bhutan and Nepal by the Siliguri Corridor; and from China by the Indian state of Sikkim in the north. Dhaka, the capital and largest city, is the nation's political, financial and cultural center. Chittagong, the second-largest city, is the busiest port on the Bay of Bengal. The official language is Bengali, one of the easternmost branches of the Indo-European language family. 
+\section{History}
+this is a regular text\\
+\textbf{this is a regular text}\\
+\textit{this is a regular text}\\
+\textbf{\textit{this is a regular text}}\\
+
+\section{Equation}
+\subsection{Inline}
+
+$x= 2 $
+\[ x=2 \]
+
+\[
+\sigma
+\Sigma
+\]
+
+\[
+\omega
+\Omega
+<
+\leq
+\geq
+T_{i_1,i_2,\dots,i_n}
+\]
+
+\begin{equation}
+    x = \frac{\sqrt{\sin{\theta}}+{\cos{\theta}}+T_i}{e^{-20}}
+\end{equation}
+
+\begin{equation}
+    x = \frac{-b\pm\sqrt{b^{2}-4ac}}{2a}
+\end{equation}
+
+\begin{equation}
+    1 + 2 + 3 + \dots + n = 
+    \frac{n(n+1}{2} = \sum_{i=1}^{i=N}i
+\end{equation}
+\section{Description}
+\subsection{Dataset}
+\subsection{Tables}
+\subsection{List}
+\subsubsection{Unordered list}
+\begin{itemize}
+    \item CSE
+    \item EEE
+\end{itemize}
+
+\subsubsection{Ordered List}
+\begin{enumerate}
+    \item CSE 300
+    \item CSE 308
+    \begin{enumerate}
+        \item[*] Latex Introduction
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Ordered list using outline}
+
+\subsubsection{Simple Table}
+See the table \ref{tab:Multi col table}
+\begin{table}[]
+    \centering
+    \begin{tabular}{|r|c|c|}
+        \hline
+        col1 & col2 & col3\\
+        \hline
+        1 & 2 & 3\\
+        \cline{1-2}
+        4 &  & 6\\
+        \hline
+    \end{tabular}
+    \caption{Simple table}
+    \label{tab:Multi col table}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|r|c|c|}
+        \hline
+        col1 & col2 & col3\\
+        \hline
+        \multicolumn{2}{|c|}{1} & 4\\
+        \hline
+        \multirow{2}{*}{4}  & 5 & 6\\
+        \cline{2-3}
+        
+         & 8  & 9\\
+        \hline
+        \multicolumn{2}{|c|}{\multirow{2}{*}{10}} & 12\\
+        \cline{3-3}
+        \multicolumn{2}{|c|}{} & 17 \\
+        \hline
+        
+    \end{tabular}
+    \caption{Multi col table}
+    \label{tab:Multi col table}
+\end{table}
+
+\section{Image}
+
+See the image \ref{fig:my_label}
+\begin{figure}
+    \centering
+    \begin{subfigure}{\textwidth}
+     \includegraphics[width = \linewidth]{rickroll.jpg}
+    \caption{Caption}
+    \label{fig:my_label}
+    \end{subfigure}
+   \begin{subfigure}{\textwidth}
+     \includegraphics[width = \linewidth]{rickroll.jpg}
+    \caption{Caption}
+    \label{fig:my_label}
+   \end{subfigure}
+\end{figure}
+
+\section{Bibliography}
+We used info from \cite{fuller1960behavior}
+\printbibliography
+
+\end{document}

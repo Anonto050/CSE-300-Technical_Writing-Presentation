@@ -1,0 +1,100 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+\usepackage{graphicx}
+
+
+\title{Introduction to Beamer}
+\subtitle{A brief overview}
+
+\author[RAA]{Riad Ahmed Anonto }
+\institute[BUET]
+{
+  Department of Computer Science and Engineering\\
+  Bangladesh University of Engineering and Technology
+}
+
+\date{\today}
+\logo{\includegraphics[height=1cm]{BUET_LOGO.svg.png}}
+
+
+\AtBeginSection[]
+{
+     \begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents[currentsection]
+     
+     \end{frame}
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+    
+\end{frame}
+
+\section{First Section}
+\begin{frame}
+\frametitle{Programming Language}
+
+Here's list of programming languages.
+\begin{itemize}
+    \item<1-> C
+    \item<2-3> C++
+    \item<3> Java
+    \item<4-> Python 
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}
+\frametitle{Graph Algorithms}
+In this slide we will mention some graph algorithms.\newline \pause
+BFS\newline \pause
+DFS\newline \pause
+Dijkstra
+    
+\end{frame}
+
+\section{Second section}
+\begin{frame}
+\frametitle{Highlighting texts}
+This is a \alert{highlighted} text
+\begin{block}{Info about block}
+same style as theme
+\end{block}
+
+\begin{alertblock}{Info about alertblocks}
+contrasts the global style
+\end{alertblock}
+
+\begin{examples}
+less contasting than alertblocks
+\end{examples}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Two column slide}
+\begin{columns}
+\column{0.5\textwidth}
+This is text in 1st column
+\begin{itemize}
+    \item first item
+    \item second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This is text in 2nd column
+\begin{itemize}
+    \item first item
+    \item second item
+\end{itemize}
+    
+\end{columns} 
+\end{frame}
+
+\end{document}
